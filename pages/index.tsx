@@ -53,22 +53,12 @@ ws.onopen = function (e) {
 
 function HomePage() {
   return (
-    <div className="m-auto p-8 pt-0 box-content" style={{ maxWidth: 720 }}>
-      <div
-        className="text-2xl font-bold hover:underline cursor-pointer"
-        style={{ height: 64, lineHeight: "64px" }}
-      >
-        望霄
-      </div>
-      <div style={{ padding: "64px 0" }}>
-        <article
-          className="prose md:prose-lg lg:prose-xl"
-          dangerouslySetInnerHTML={{
-            __html: marked(md),
-          }}
-        />
-      </div>
-    </div>
+    <article
+      className="prose md:prose-lg lg:prose-xl"
+      dangerouslySetInnerHTML={{
+        __html: marked(md),
+      }}
+    />
   );
 }
 
